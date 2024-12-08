@@ -1,0 +1,741 @@
+/*Unidades relativas*/
+:root {
+    font-size: 22px;
+    /* Tamaño base */
+ }
+ 
+ 
+ h1 {
+    font-size: 2rem;
+    /* El doble del tamaño base: 44px */
+ }
+ 
+ 
+ h2 {
+    font-size: 1rem;
+    /* El mismo tamaño base: 22px */
+ }
+ 
+
+/*Rango de dimensiones*/
+.Rangodedimensiones {
+    width: 800px;
+    height: 400px;
+    background: red;
+    max-width: 500px;
+ } 
+
+
+
+/*Espaciado y relleno */
+  
+.Espaciadoyrelleno {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    margin: 15px;
+    /* Equivalente a margin: 15px 15px 15px 15px; */ 
+ 
+    margin: 20px 10px;
+    /* Equivalente a margin: 20px 10px 20px 10px; */ 
+ 
+    margin: 20px 10px 5px;
+    /* Equivalente a margin: 20px 10px 5px 10px; */
+ }
+ 
+ 
+  
+ 
+
+/*Estilos de borde*/
+.estilosdeborde {
+    border-color: gray;
+    border-width: 1px;
+    border-style: dotted;
+ }  
+ 
+
+/*Bordes múltiples (diferentes)*/
+
+.bordesmultiples {
+    border-color: red blue green;
+    border-width: 2px 10px 5px;
+    border-style: solid dotted solid;
+ } 
+
+/*Atajos de bordes */
+  
+.atajosdeordes {
+    border: 1px solid #000000; 
+ }  
+ 
+
+/*Bordes específicos*/
+
+.bordesespecificos1 {
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+    border-bottom-color: black;
+ }
+ 
+
+ .bordesespecificos11 {
+    border: 5px solid red;
+    border-top-width: 15px;
+    border-top-color: orange;
+    border-top-style: solid; /* Esta propiedad no es necesaria (se hereda) */
+ }
+ 
+
+/*Bordes específicos (2)*/
+
+.bordesespecificos2 {
+    border: 5px solid red;
+    border-top: 15px solid orange;
+ }
+
+/*Esquinas redondeadas */
+.Esquinasredondeadas {
+    width: 200px;
+    height: 200px;
+    background-color: #451;
+    border-radius: 25px; /* 1 parámetro */
+    border-radius: 25% 50%; /* 2 parámetros */
+    border-radius: 50px 25px 10px; /* 3 parámetros */
+    border-radius: 25px 0 15px 50px; /* 4 parámetros */
+  } 
+  
+/*Esquinas irregulares*/
+
+.Esquinasirregulares {
+    width: 200px;
+    height: 200px;
+    background-color: #451;
+    border-radius: 25% / 50%; /* 1 parámetro (x / y) */
+    border-radius: 5px 50px / 50px 15px; /* 2 parámetros (x / y) */
+    border-radius: 50px 25px 10px / 50px 75px 10px; /* 3 parámetros (x / y) */
+    border-radius: 5px 50px 5px 50px / 50px 15px 50px 15px; /* 4 parámetros (x / y) */
+  }    
+  
+/*Cálculos con CSS*/
+.calculos {
+    width: calc(200px + 1em);
+    height: 300px;
+    background: blue;
+  }
+
+/*Valor mínimo en CSS */
+.funcionvalorminimo {
+    width: min(200px, 25%);
+    height: 200px;
+    background: red;
+   }
+
+/*Función: Valor máximo*/
+.funcionvalormaximo {
+
+    width: max(200px - 100px, 25%, 14vw);
+   
+    height: 200px;
+   
+    background: red;
+   
+   }
+
+/*Función: Valor ajustado */
+
+.funcionvalorajustado {
+
+    width: max(100px, min(25%, 300px));
+   
+    width: clamp(100px, 25%, 300px);
+   
+    height: 200px;
+   
+    background: red;
+   
+   }
+
+/*Colores, fondos e imagenes*/
+.cfi {
+    background-color: black; /* Color de fondo */
+    color: white; /* Color de texto */
+   }
+       
+   
+/*Formas de indicar un color*/
+  
+.color1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    }
+   
+   .color2 {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;    
+   }
+
+   .color3 {
+    width: 100px;
+    height: 100px;    
+    background-color: lightpink;    
+   }
+
+   .color4 {
+    width: 100px;
+    height: 100px;    
+    background-color: rebeccapurple
+   }  
+          
+/*Función RGB*/  
+
+.FuncionRGB1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(125, 80, 10);    
+}
+
+.FuncionRGB2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(55%, 25%, 75%);    
+}
+   
+/*Formato hexadecimal*/      
+
+.Formatohexadecimal1 {
+    width: 100px;
+    height: 100px;
+    background-color: #512592;
+    
+   }
+   .Formatohexadecimal2 {
+    width: 100px;
+    height: 100px;    
+    background-color: #000000; /* Abreviable a #000 */
+      }
+
+   .Formatohexadecimal3 {
+    width: 100px;
+    height: 100px;    
+    background-color: #451; /* Equivalente a #445511; */
+   }
+
+
+
+/*Formato HSL*/
+.FormatoHSL1 {
+    width: 100px;
+    height: 100px;
+
+    /* Notación clásica */
+    background-color: hsl(120deg, 25%, 75%);
+  
+   }  
+   .FormatoHSL2 {
+    width: 100px;
+    height: 100px;
+
+   
+    /* Notación moderna */
+    background-color: hsl(120deg 25% 75%);
+   } 
+
+/*Canales Alfa*/
+.CanalesAlfa {
+
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0, 0.5); /* Notación clásica */
+    background-color: rgb(0 0 0 / 50%); /* Notación moderna */
+    background-color: hsl(180deg, 50%, 25%, 0.75); /* Notación clásica */
+    background-color: hsl(180deg 50% 25% / 75%); /* Notación moderna */
+    background-color: #aa44bb77;
+    background-color: #a4b7; /* Notación abreviada */
+   }    
+
+/*Transparencia en CSS*/
+
+
+
+.Transparencia1{
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    color: #ffffff;
+   
+    opacity: 0.5;
+    opacity: 50%; /* Equivalente a la anterior */
+   }     
+
+
+.Transparencia2 {
+    width: 100px;
+    height: 100px;
+     background-color: rgb(255 0 0 / 50%);
+    
+     color: white;
+    
+    }
+    
+    
+    
+   
+   
+/*Opciones de imagen de fondo (2)*/
+
+.Opcionesdeimagendefondo2 {
+    width: 100px;
+    height: 100px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScHjBgg6SiOFSfxfVZYbqOqSOfC9zEJ9GFpA&s);
+   
+    background-size: 48px 48px;
+   }  
+
+
+/*Propiedad de fondo*/
+.Propiedaddefondo1 {
+
+    width: 500px;
+    height: 500px;
+    /* Atajo simple */
+    background: #fff url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScHjBgg6SiOFSfxfVZYbqOqSOfC9zEJ9GFpA&s) top center repeat-x;
+   }
+   
+   .Propiedaddefondo2 {
+
+    width: 500px;
+    height: 500px;
+    
+    /* Atajo completo */
+    background: deeppink url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScHjBgg6SiOFSfxfVZYbqOqSOfC9zEJ9GFpA&s) 0 0 / 150px space scroll padding-box
+      padding-box;
+    }
+   
+   .Propiedaddefondo3 {
+
+    width: 500px;
+    height: 500px;
+    
+    /* Atajo múltiple */
+    background: url(https://static.lasprovincias.es/www/multimedia/202112/12/media/cortadas/gatos-kb2-U160232243326NVC-624x385@Las%20Provincias.jpg) center center / cover,
+      deeppink url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScHjBgg6SiOFSfxfVZYbqOqSOfC9zEJ9GFpA&s) 0 0 / 150px space scroll padding-box padding-box;
+   }
+   
+   
+      
+   
+
+
+/*Gradiente lineal*/
+
+
+
+.Gradientelineal01 {
+    width: 100px;
+    height: 100px;
+
+    background-image: linear-gradient(blue, red);
+   }   
+
+   .Gradientelineal02 {
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to right, blue, red); /* Primer ejemplo */
+    background-image: linear-gradient(
+      to right,
+      blue,
+      yellow,
+      red
+    ); /* Segundo ejemplo */
+   } 
+
+
+/*Gradiente lineal. Color*/
+
+.Gradientelineal1 {
+
+    width: 100px;
+    height: 100px;
+    /* Básico, con colores con distancias equilibradas */
+    background: linear-gradient(to right, black, blue, gold, green, red);
+   
+   
+    /* Equivalente al anterior */
+    background: linear-gradient(
+      to right,
+      black 0%,   /* Color 100% negro en el punto 0% y comienza a cambiar */ 
+      blue 25%,   /* Color 100% azul en el punto 25% y comienza a cambiar */
+      gold 50%,   /* Color 100% dorado en el punto 50% y comienza a cambiar */ 
+      green 75%,  /* Color 100% verde en el punto 75% y comienza a cambiar */ 
+      red 100%     /* Color 100% rojo en el punto 100% */
+    );
+   }
+
+
+ 
+
+   .Gradientelineal2 {
+    width: 100px;
+    height: 100px;
+    /* Delimitando los colores con corte brusco */
+    background: linear-gradient(
+      to right,
+      black 0% 25%,   /* Color negro desde 0% hasta 25%, sin degradación */ 
+      blue 25% 50%,   /* Color azul desde 25% hasta 50%, sin degradación */ 
+      gold 50% 75%,   /* Color dorado desde 50% hasta 75%, sin degradación */ 
+      green 75% 100%  /* Color verde desde 75% hasta 100%, sin degradación */
+    );
+   
+   
+    /* Equivalente al anterior */
+    background: linear-gradient(
+      to right,
+      black 25%,   /* Si se omite, el punto de partida, al ser el primer color es 0% */
+      blue  25% 50%,
+      gold  50% 75%,
+      green 75%   /* Si se omite, el punto de final, al ser el último color es 100% */
+    );
+   }
+   
+   
+   .Gradientelineal3 {
+    width: 100px;
+    height: 100px;
+    /* Establece un patrón repetitivo */
+    background: repeating-linear-gradient(
+      blue 0 10%,
+      yellow 10% 20%,
+      red 20% 30%
+    );
+   
+   
+    /* Equivalente al siguiente gradiente */
+    background: linear-gradient(
+      to right,
+      blue 0 10%,
+      yellow 10% 20%,
+      red 20% 30%,
+      blue 30% 40%,
+      yellow 40% 50%,
+      red 50% 60%,
+      blue 60% 70%,
+      yellow 70% 80%,
+      red 80% 90%,
+      blue 90% 100%
+    );
+   }
+   
+   
+   
+   
+   
+
+
+
+
+
+   
+/*Gradiente radial */
+.Gradienteradial1 {
+    width: 100px;
+    height: 100px;
+    
+    /* Modalidad básica */
+    background: radial-gradient(gold, red, black);   
+    
+   }
+
+
+
+   .Gradienteradial2 {
+    width: 100px;
+    height: 100px;
+    
+    
+    /* Gradiente elíptico */
+    background: radial-gradient(ellipse, gold 50%, red 55%, black 75%);
+       
+   }
+
+
+
+   .Gradienteradial3 {
+    width: 100px;
+    height: 100px;
+    
+      /* Gradiente circular */
+    background: radial-gradient(circle 200px, gold 50%, red 55%, black 75%);
+      }
+
+      .Gradienteradial4 {
+        width: 100px;
+        height: 100px;
+       
+        /* Gradiente circular con posición */
+        background: radial-gradient(
+          circle 400px at left,
+          gold 50%,
+          red 55%,
+          black 75%
+        );
+       }
+
+
+
+
+/*Gradiente radial. Posición*/
+
+.element {
+    width: 600px;
+    height: 200px;
+   
+    /* Gradiente circular de 250px de radio */
+    background: radial-gradient(circle 200px at 0 50%, blue, red, gold);
+   
+    /* Gradiente elíptico de 200x100 de radio */
+    background: radial-gradient(
+      ellipse 200px 100px at 100% 100%,
+      blue,
+      red,
+      gold
+    );
+   
+    /* Gradiente circular con un tamaño del lado más lejano del contenedor */
+    background: radial-gradient(circle at top right, blue, red, gold);
+   }
+
+   /*repeating-radial-gradient()*/
+   .repeating-radial-gradient {
+    /* Establece un patrón repetitivo similar al Looney Tunes */
+    width: 600px;
+    height: 400px;
+    background: repeating-radial-gradient(
+      circle,
+      #ff4444 10%,
+      red 20%,
+      darkred 30%
+    );
+   
+   
+    /* Equivalente a */
+    background: repeating-radial-gradient(
+      circle,
+      #ff4444 0% 10%,
+      red 10% 20%,
+      darkred 20% 30%
+    );
+   }
+
+
+
+
+
+
+
+
+
+/*Gradiente cónico. Posición */
+
+.grdienteConico1 {
+    width: 600px;
+    height: 400px;
+   
+   
+    /* Gradiente cónico que comienza arriba, centrado en horizontal */
+    background-image: conic-gradient(at 50% 0%, blue, black);
+   }
+   
+
+.grdienteConico2 {
+width: 100px;
+height: 100px;
+background: repeating-conic-gradient(blue 10%, yellow 20%, red 30%);
+}
+    
+    /*Selectores CSS básicos - ID (únicos)*/
+#saludo {
+    background-color: blue;
+    color: white;
+   }  
+
+   /*Selectores CSS básicos - clases*/
+
+   .classic {
+    background-color: green;
+    color: white;
+   }
+   
+   
+   .back {
+    background-color: orange;
+    color: white;
+   }
+   button.classic {
+    background-color: green;
+    color: white;
+   }
+   
+
+   /*Mostrar elemento*/
+   
+  
+   .defecto {
+       background: blue;
+       color: white;
+       margin: 1px;
+   }
+/*Bloque en línea*/
+
+
+    .inline-block {
+        display: inline-block;
+        width: 250px;
+        background: steelblue;
+        color: white;
+    }
+
+    /*Dirección de los ejes flex*/
+    .container {
+        display: flex;
+        flex-direction: column;
+        background: steelblue;
+    }
+    
+    .item {
+        background: grey;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 50px 300px;
+        grid-template-rows: 200px 75px;
+    }
+
+    /*    <p>Alineación de contenedores y conjuntos</p>*/
+    .container1 {
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(3, 50px);
+        gap: 10px;
+        background: grey;
+        height: 300px;
+
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .item1 {
+        padding: 10px;
+        background: black;
+        color: white;
+    }
+        
+    /*<p>Grid por áreas</p>*/
+    .container2 {
+        display: grid;
+        grid-template-areas: 
+            "head head"
+            "menu main"
+            "foot foot";
+    }
+
+    .item-1 {
+        grid-area: head;
+        background: blue;
+    }
+
+    .item-2 {
+        grid-area: menu;
+        background: red;
+    }
+
+    .item-3 {
+        grid-area: main;
+        background: green;
+    }
+
+    .item-4 {
+        grid-area: foot;
+        background: orange;
+    }
+   
+
+    /*<p>Columna de la cuadrícula</p>*/
+
+
+    .container3 {
+        display: inline-grid;
+        border: 5px solid darkred;
+    }
+    .itemB {
+        background: grey;
+        color: white;
+        padding: 1em;
+        border: 5px solid black;
+        min-width: 200px;
+    }
+
+    .item-1B {
+        grid-column-start: 1;
+        grid-column-end: 2; /* Mismo efecto si colocamos 1 */
+    }
+
+
+    .item-1 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+    }
+
+    .item-1 {
+        background: red;
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        grid-row-start: 3;
+    }
+
+    /*Grid CSS: Líneas con nombre*/
+    .containerC {
+        display: grid;
+        grid-template-columns: [col-start] 1fr [mid-start] 1fr [mid-end] 1fr [col-end];
+        grid-template-rows: [row-start] 1fr [row-mid-start] 1fr [row-mid-end] 1fr [row-end];
+        min-height: 300px;
+        color: white;
+        border: 5px solid black;
+    }
+    .headerC {
+        background: indigo;
+        /* Ocupa toda la fila inicial, rueda el resto a las siguientes */
+        grid-column-start: col-start;
+        grid-column-end: col-end;
+    }
+    
+    .sidebarC {
+        background: black;
+        /* Realmente no hace falta, porque ya está colocada en este lugar */
+        grid-row-start: row-mid-start;
+        grid-row-end: row-mid-end;
+    }
+    
+    .contentC {
+        background: orangered;
+        /* Ocupa las dos celdas de la derecha de la fila central */
+        grid-column-start: mid-start;
+        grid-column-end: col-end;
+        grid-row-start: row-mid-start;
+        grid-row-end: row-mid-end;
+    }
+    
+    .footerC {
+        background: royalblue;
+        /* Ocupa toda la fila final */
+        grid-column-start: col-start;
+        grid-column-end: col-end;
+        grid-row-start: row-mid-end;
+        grid-row-end: row-end;
+    }

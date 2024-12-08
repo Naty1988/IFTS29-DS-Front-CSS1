@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <style>
+            body {
+                background: hotpink;
+                color: white;
+            }
+        </style>
+    </head>
+</head>
+<body>
+
+
+
+    
+<p>Prefijos CSS de navegador</p>
+div {
+    transform: ...
+        /* El navegador implementa la especificación oficial */
+        -webkit-transform: ...
+        /* Chrome antiguo / Safari (Motor Webkit) */
+        -moz-transform: ...
+        /* Firefox antiguo (Motor Gecko) */
+        -ms-transform: ...
+        /* Internet Explorer (Motor Trident) */
+        -o-transform: ...
+        /* Opera antiguo (Motor Presto) */
+ }  
+
+
+<p>Unidades relativas</p>
+<h1>hola desde h1</h1>
+<h2>hola desde h2</h2>
+
+
+<p>Rango de dimensiones</p>
+<div class="Rangodedimensiones"></div>
+
+    <p>Espaciado y relleno </p>
+    <div class="Espaciadoyrelleno"></div>
+
+<p>Estilos de borde</p>
+<div class="estilosdeborde"></div>
+
+<p>Bordes múltiples (diferentes)</p>
+<div class="bordesmultiples"></div>
+
+
+<p>Atajos de bordes </p>
+<div class="atajosdeordes"></div>
+
+    <p>Bordes específicos</p>
+    <div class="bordesespecificos1"></div>
+    <br>
+    <div class="bordesespecificos11"></div>
+
+
+
+    <p>Bordes específicos (2)</p>
+    <div class="bordesespecificos2"></div>
+
+
+    <p>Esquinas redondeadas </p>
+    <div class="Esquinasredondeadas"></div>
+
+    <p>Esquinas irregulares</p>
+    <div class="Esquinasirregulares"></div>
+
+
+
+<p>Propiedades lógicas CSS</p>
+
+      <div class="box">Hello</div>
+
+    <style>
+        body {
+            writing-mode: horizontal-tb;
+        }
+
+        .box {
+            /* Propiedades lógicas */
+            inline-size: 150px;
+            block-size: 150px;
+            border-block-start: 50px solid black;
+            border-block-end: 50px solid hotpink;
+
+            /* Otras propiedades */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: red;
+            color: #fff;
+            font-size: 42px;
+        }
+    </style>
+
+
+
+
+
+
+
+
+<p>Cálculos con CSS</p>
+<div class="calculos"></div>
+
+
+<p>Valor mínimo en CSS </p>
+<div class="funcionvalorminimo"></div>
+
+
+<p>Función: Valor máximo</p>
+<div class="funcionvalormaximo"></div>
+
+
+
+<p>Función: Valor ajustado </p>
+<div class="funcionvalorajustado"></div>
+
+
+
+<p>Función: Valor del atributo </p>
+    <div class="element" data-content="CSS"></div>
+    <style>
+        .element::before {
+            content: attr(data-content);
+            font-size: 22px;
+            color: #444;
+        }
+    </style>
+    
+<p>Colores, fondos e imagenes</p>
+<div class="cfi">hola</div>
+
+
+    <p>Formas de indicar un color</p>
+    <div class="color1"></div>
+    <div class="color2"></div>
+    <div class="color3"></div>
+    <div class="color4"></div>
+
+    <p>Función RGB</p>
+    <div class="FuncionRGB1"></div>
+    <div class="FuncionRGB2"></div>
+
+
+    <p>Formato hexadecimal</p>
+    <div class="Formatohexadecimal1"></div>
+    <div class="Formatohexadecimal2"></div>
+    <div class="Formatohexadecimal3"></div>
+
+<p>Formato HSL</p>
+<div class="FormatoHSL1"></div>
+<div class="FormatoHSL2"></div>
+
+
+<p>Canales Alfa</p>
+<div class="CanalesAlfa"></div>
+
+<p>Transparencia en CSS</p>
+<div class="Transparencia1"></div>
+<div class="Transparencia2"></div>
+
+
+<p>/*Opciones de imagen de fondo (2)*/</p>
+<div class="Opcionesdeimagendefondo2"></div>
+
+
+<p>/*Propiedad de fondo*/</p>
+
+<div class="Propiedaddefondo1"></div>
+<div class="Propiedaddefondo2"></div>
+<div class="Propiedaddefondo3"></div>
+
+<p>/*Gradiente lineal*/</p>
+    
+<div class="Gradientelineal01"></div>
+<div class="Gradientelineal02"></div>
+
+
+
+
+<p>/*Gradiente lineal. Color*/</p>
+<div class="Gradientelineal1"></div>
+<div class="Gradientelineal2"></div>
+<div class="Gradientelineal3"></div>
+
+
+ <p>/*Gradiente radial */</p>
+ <div class="Gradienteradial1"></div>
+ <div class="Gradienteradial2"></div>
+ <div class="Gradienteradial3"></div>
+ <div class="Gradienteradial4"></div>
+
+
+
+<p>Gradiente radial. Posición</p>
+
+<div class="element"></div>
+
+
+<p>repeating-radial-gradient()</p>
+<div class= "repeating-radial-gradient"></div>
+
+
+    <p>Gradiente cónico. Posición</p>
+    <div class="grdienteConico1">     
+    </div>
+
+    <div class="grdienteConico2">     
+    </div>
+
+
+    <p>Selectores CSS básicos - ID (únicos)</p>
+
+       <div id="saludo">
+           <p>¡Hola, usuario! ¡Bienvenido a esta página!</p>
+       </div>
+       <div id="main">
+           <p>En esta página encontrarás los siguientes temas:</p>
+       </div>
+   
+<p>Selectores CSS básicos - clases</p>
+
+      
+              <div id="main">
+                  <p>Elige uno de los siguientes botones:</p>
+       
+                  <button class="classic">Opción 1</button>
+                  <button class="classic">Opción 2</button>
+                  <button class="classic">Opción 3</button>
+                  <button class="back">Volver</button>
+              </div>
+
+<p>Mostrar elemento</p>
+
+<div class="defecto">Elemento 1</div>
+<div class="defecto">Elemento 2</div>
+<div class="defecto">Elemento 3</div>
+
+     
+      <p>Bloque en línea</p>
+      <p>Si utilizamos la propiedad display con el valor inline-block, conseguiremos un elemento que funcionará como si fuera un elemento inline, pero haciendo caso a las propiedades width y height, las cuales se ignoran si estamos utilizando un display: inline  .</p>
+      <div class="inline-block">Elemento 1</div>
+      <div class="inline-block">Elemento 2</div>
+      
+         
+      <p>/*Dirección de los ejes flex*/</p>
+      <div class="container">contenedor
+      <div class="item">Item</div>
+
+    </div>
+
+    
+<p>Grid</p>
+
+    <div class="grid">Grid</div>
+
+    <p>Alineación de contenedores y conjuntos</p>
+    <div class="container1">
+        <div class="item1">Item 1</div>
+        <div class="item1">Item 2</div>
+        <div class="item1">Item 3</div>
+        <div class="item1">Item 4</div>
+        <div class="item1">Item 5</div>
+        <div class="item1">Item 6</div>
+    </div>
+
+<p>Grid por áreas</p>
+
+    <div class="container2">
+        <div class="itemA item-1">1</div>
+        <div class="itemA item-2">2</div>
+        <div class="itemA item-3">3</div>
+        <div class="itemA item-4">4</div>
+    </div>
+
+<p> /*<p>Columna de la cuadrícula</p>*/</p>
+
+    <div class="container3">
+        <div class="itemB item-1B">Item 1</div>
+        <div class="itemB item-2B">Item 2</div>
+        <div class="itemB item-3B">Item 3</div>
+        <div class="itemB item-4B">Item 4</div>
+    </div>
+
+    <p>Grid CSS: Líneas con nombre</p>
+
+    <div class="containerC">
+        <div class="headerC">Header</div>
+        <div class="sidebarC">Sidebar</div>
+        <div class="contentC">Content</div>
+        <div class="footerC">Footer</div>
+    </div>
+
+</body>
+</html>
